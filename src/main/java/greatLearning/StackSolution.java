@@ -8,9 +8,10 @@ public class StackSolution {
 
         Stack <Integer> s1 = new Stack<>();
         s1.push(2);
-        s1.push(4);
         s1.push(9);
-        int indexFound = s1.search(9);
+        s1.push(4);
+        s1.push(5);
+        int indexFound = s1.search(12);
         System.out.println("indexFound is: " + indexFound);
         System.out.println(s1);
         Iterator it = s1.iterator();
@@ -18,9 +19,11 @@ public class StackSolution {
             Object s2 = it.next();
             System.out.print(s2);
         }
-
         System.out.println();
-
+        System.out.println("Size of s1: " + s1.size());
+        s1.sort(null);
+        System.out.println(s1);
+        System.out.println();
         s1.pop();
         System.out.println(s1);
         System.out.println(s1.peek());
