@@ -50,10 +50,10 @@ public class QueueSolution {
         q2.enqueue(2);
         q2.enqueue(4);
         q2.enqueue(8);
-          q2.display();
+        q2.display();
         System.out.println();
-          q2.dequeue();
-          q2.display();
+        q2.dequeue();
+        q2.display();
 
     }
 }
